@@ -1,0 +1,135 @@
+@import "../../styles/responsive.scss";
+
+nav {
+  border: 2px solid orangered;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.625rem 1.125rem;
+  gap: 5rem;
+
+  @include breakpoint-up(large) {
+    padding: 1.25rem;
+  }
+
+  .left {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2.25rem;
+
+    a {
+      img {
+        cursor: pointer;
+        height: 26px;
+        width: 103px;
+
+        @include breakpoint-up(medium) {
+          height: 28px;
+          width: 115px;
+        }
+
+        @include breakpoint-up(large) {
+          height: 33px;
+          width: 137px;
+        }
+      }
+    }
+
+    .socials {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 0.75rem;
+
+      @include breakpoint-down(medium) {
+        display: none;
+      }
+
+      a {
+        height: 1.5rem;
+        width: 1.5rem;
+
+        img {
+          height: 1.5rem;
+          width: 1.5rem;
+        }
+      }
+    }
+  }
+
+  .right {
+    .menuIcon {
+      position: relative;
+      z-index: 999;
+      border: 1px solid magenta;
+
+      img {
+        cursor: pointer;
+        transition: all 0.3s 0.1s ease;
+
+        &.active {
+          filter: invert(100%);
+        }
+      }
+    }
+
+    .menu {
+      position: absolute;
+      top: 0;
+      right: 0;
+      background-color: black;
+      height: 100%;
+      width: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 1.75rem;
+      z-index: 99;
+      transition: all 0.6s ease;
+
+      a {
+        visibility: hidden;
+        opacity: 0;
+        font-size: 0;
+        color: white;
+        transition: all 0.1s ease-in;
+
+        &:hover {
+          font-weight: 500;
+          transform: scale(1.03);
+          color: #4ba1a7;
+        }
+      }
+
+      &.open {
+        right: 0%;
+        width: 70%;
+
+        a {
+          font-size: 1.125rem;
+          visibility: visible;
+          opacity: 1;
+
+          @include breakpoint-up(medium) {
+            font-size: 1.5rem;
+          }
+
+          @include breakpoint-up(large) {
+            font-size: 1.75rem;
+          }
+        }
+
+        @include breakpoint-up(medium) {
+          width: 50%;
+          gap: 2rem;
+        }
+
+        @include breakpoint-up(large) {
+          gap: 2.75rem;
+        }
+      }
+    }
+  }
+}

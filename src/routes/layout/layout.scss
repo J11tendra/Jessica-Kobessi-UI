@@ -1,0 +1,28 @@
+@import "../../styles/responsive.scss";
+
+.layout {
+  border: 2px solid red;
+  height: 100vh;
+  max-width: 40rem;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+
+  @include breakpoint-down(small) {
+    min-width: 18.75rem;
+  }
+
+  @include breakpoint-up(medium) {
+    max-width: 48rem;
+    padding: 0 2.25rem;
+  }
+
+  @include breakpoint-up(large) {
+    max-width: 82rem;
+    // padding: 0 4rem;
+  }
+
+  @include breakpoint-up(large) {
+    max-width: 87rem;
+    // padding: 0 4.25rem;
+  }
+}

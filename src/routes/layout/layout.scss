@@ -1,7 +1,6 @@
 @import "../../styles/responsive.scss";
 
 .layout {
-  border: 2px solid red;
   height: 100vh;
   max-width: 40rem;
   margin: 0 auto;
@@ -18,11 +17,13 @@
 
   @include breakpoint-up(large) {
     max-width: 82rem;
+    // max-width: 85rem;
     // padding: 0 4rem;
   }
 
   @include breakpoint-up(large) {
-    max-width: 87rem;
+    // max-width: 87rem;
+    max-width: 90rem;
     // padding: 0 4.25rem;
   }
 }

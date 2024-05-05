@@ -1,12 +1,11 @@
 @import "../../styles/responsive.scss";
 
 nav {
-  border: 2px solid orangered;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0.625rem 1.125rem;
-  gap: 5rem;
+  gap: 11rem;
 
   @include breakpoint-up(large) {
     padding: 1.25rem;
@@ -62,7 +61,6 @@ nav {
     .menuIcon {
       position: relative;
       z-index: 999;
-      border: 1px solid magenta;
 
       img {
         cursor: pointer;

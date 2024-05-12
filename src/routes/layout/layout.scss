@@ -11,19 +11,15 @@
   }
 
   @include breakpoint-up(medium) {
-    max-width: 48rem;
+    max-width: 54rem;
     padding: 0 2.25rem;
   }
 
   @include breakpoint-up(large) {
     max-width: 82rem;
-    // max-width: 85rem;
-    // padding: 0 4rem;
   }
 
   @include breakpoint-up(large) {
-    // max-width: 87rem;
     max-width: 90rem;
-    // padding: 0 4.25rem;
   }
 }

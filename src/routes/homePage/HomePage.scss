@@ -10,10 +10,15 @@
     opacity: 0.95;
     height: 31.25rem;
     width: 100%;
-    min-width: 340px;
+    min-width: 310px;
     border-radius: 0.5rem;
     margin: 1.125rem 0;
     padding: 3.125rem 1.375rem;
+
+    @include breakpoint-up(medium) {
+      height: 35rem;
+      padding: 3.125rem 2.5rem;
+    }
 
     @include breakpoint-up(large) {
       height: 44.875rem;
@@ -21,25 +26,32 @@
     }
 
     @include breakpoint-up(x-large) {
-      height: 44.875rem;
+      height: 52.875rem;
       padding: 3.75rem 6.25rem;
     }
 
     .hero-text {
       position: absolute;
       top: 40%;
-      //   border: 2px solid red;
       color: white;
 
+      @include breakpoint-up(medium) {
+        top: 37%;
+      }
+
       @include breakpoint-up(large) {
-        top: 22%;
+        top: 32%;
       }
 
       .text-container {
         margin-bottom: 2.75rem;
 
-        @include breakpoint-up(large) {
+        @include breakpoint-up(medium) {
           margin-bottom: 3.5rem;
+        }
+
+        @include breakpoint-up(large) {
+          margin-bottom: 3.75rem;
         }
 
         span {
@@ -48,6 +60,11 @@
           margin-bottom: 0.25rem;
 
           @include breakpoint-up(large) {
+            font-size: 1.25rem;
+            margin-bottom: 0.5rem;
+          }
+
+          @include breakpoint-up(x-large) {
             font-size: 1.375rem;
             font-weight: 400;
             margin-bottom: 0.75rem;
@@ -59,36 +76,43 @@
           font-weight: 800;
           line-height: 0.87;
 
+          @include breakpoint-up(medium) {
+            font-size: 4rem;
+          }
+
           @include breakpoint-up(large) {
-            font-size: 10rem;
+            font-size: 7rem;
             font-weight: 900;
+          }
+
+          @include breakpoint-up(x-large) {
+            font-size: 10rem;
           }
         }
       }
 
       .stats-container {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        border-radius: 0.5rem;
-        padding: 0.9375rem 0.625rem;
-        background-color: black;
-        color: white;
-        gap: 1rem;
-        margin-right: 2rem;
-        //
-        width: auto;
+        display: none;
+
+        @include breakpoint-up(medium) {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border-radius: 0.5rem;
+          padding: 1.25rem 0.625rem;
+          background-color: black;
+          color: white;
+          gap: 1rem;
+          margin-right: 2.5rem;
+          width: auto;
+        }
 
         @include breakpoint-up(large) {
-          padding: 1.975rem 3rem;
-          width: auto;
-          // width: 1160px;
-          // margin: 0 auto;
+          padding: 1.975rem 2.25rem;
         }
 
         @include breakpoint-up(x-large) {
           padding: 1.975rem 3.125rem;
-          // width: auto;
           width: 1160px;
         }
 
@@ -98,37 +122,29 @@
           justify-content: center;
           align-items: center;
           gap: 0.75rem;
-          // width: 80px;
           width: auto;
-
-          &:nth-child(4) {
-            @include breakpoint-down(large) {
-              display: none;
-            }
-          }
 
           @include breakpoint-up(large) {
             flex-direction: row;
-            // width: auto;
-            // width: 310px;
             gap: 0;
           }
 
           @include breakpoint-up(x-large) {
             flex-direction: row;
-            // width: auto;
-            // width: 310px;
             gap: 0;
             justify-content: space-between;
           }
 
           span {
-            font-size: 1rem;
+            font-size: 1.5rem;
             font-weight: 700;
 
             @include breakpoint-up(large) {
+              font-size: 3.125rem;
+            }
+
+            @include breakpoint-up(x-large) {
               font-size: 4.25rem;
-              // font-weight: 700;
             }
           }
 
@@ -138,6 +154,11 @@
             text-align: center;
 
             @include breakpoint-up(large) {
+              font-size: 0.85rem;
+              max-width: 150px;
+            }
+
+            @include breakpoint-up(x-large) {
               font-size: 1rem;
             }
           }

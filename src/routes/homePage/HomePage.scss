@@ -26,7 +26,7 @@
     }
 
     @include breakpoint-up(x-large) {
-      height: 52.875rem;
+      height: 55.875rem;
       padding: 3.75rem 6.25rem;
     }
 
@@ -43,6 +43,13 @@
         top: 32%;
       }
 
+      @include breakpoint-up(x-large) {
+        max-width: 1150px;
+        width: 100%;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+
       .text-container {
         margin-bottom: 2.75rem;
 
@@ -52,6 +59,10 @@
 
         @include breakpoint-up(large) {
           margin-bottom: 3.75rem;
+        }
+
+        @include breakpoint-up(x-large) {
+          margin-bottom: 5.75rem;
         }
 
         span {

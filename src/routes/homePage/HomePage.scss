@@ -177,4 +177,90 @@
       }
     }
   }
+
+  .skills-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin: 4.25rem 0;
+    min-width: 315px;
+    padding: 0 1.5rem;
+
+    @include breakpoint-up(medium) {
+      flex-direction: row;
+    }
+
+    @include breakpoint-up(large) {
+      justify-content: space-evenly;
+    }
+
+    .txt-row-container {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      gap: 2rem;
+
+      @include breakpoint-up(medium) {
+        flex-direction: column;
+        justify-content: center;
+      }
+
+      @include breakpoint-up(x-large) {
+        flex-direction: row;
+        // justify-content: center;
+      }
+
+      img {
+        height: 2.5rem;
+        width: 2.5rem;
+
+        @include breakpoint-up(medium) {
+          height: 3.5rem;
+          width: 3.5rem;
+        }
+
+        @include breakpoint-up(x-large) {
+          height: 3.75rem;
+          width: 3.75rem;
+        }
+      }
+
+      .txt-row {
+        max-width: 18.5rem;
+
+        @include breakpoint-up(medium) {
+          text-align: center;
+        }
+
+        @include breakpoint-up(x-large) {
+          text-align: left;
+        }
+
+        h3 {
+          color: #111111;
+          font-size: 1.25rem;
+          font-weight: 700;
+          margin-bottom: 0.5rem;
+
+          @include breakpoint-up(large) {
+            font-size: 1.4rem;
+          }
+
+          @include breakpoint-up(x-large) {
+            margin-bottom: 0.75rem;
+          }
+        }
+
+        p {
+          font-size: 1rem;
+          color: #828282;
+          line-height: 1.5;
+
+          @include breakpoint-up(large) {
+            font-size: 1.125rem;
+          }
+        }
+      }
+    }
+  }
 }

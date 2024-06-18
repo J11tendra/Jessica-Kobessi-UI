@@ -33,6 +33,29 @@ function HomePage() {
           </div>
         </div>
       </div>
+      <div className="skills-container">
+        <div className="txt-row-container">
+          <img src="public/moniter-skill.png" alt="" />
+          <div className="txt-row">
+            <h3>UI/UX Design</h3>
+            <p>At in proin consequat ut cursus venenatis sapien.</p>
+          </div>
+        </div>
+        <div className="txt-row-container">
+          <img src="public/calendar-skill.png" alt="" />
+          <div className="txt-row">
+            <h3>Illustration</h3>
+            <p>At in proin consequat ut cursus venenatis sapien.</p>
+          </div>
+        </div>
+        <div className="txt-row-container">
+          <img src="public/laptop-skill.png" alt="" />
+          <div className="txt-row">
+            <h3>Graphic Design</h3>
+            <p>At in proin consequat ut cursus venenatis sapien.</p>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }

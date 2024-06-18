@@ -207,7 +207,6 @@
 
       @include breakpoint-up(x-large) {
         flex-direction: row;
-        // justify-content: center;
       }
 
       img {
@@ -258,6 +257,91 @@
 
           @include breakpoint-up(large) {
             font-size: 1.125rem;
+          }
+        }
+      }
+    }
+  }
+
+  .info-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    @include breakpoint-up(large) {
+      flex-direction: row;
+    }
+
+    .info-wrapper {
+      display: flex;
+      flex-direction: column;
+      background-color: #efeaea;
+      min-width: 18.75rem;
+      // max-width: 23.75rem;
+      border-radius: 0.5rem;
+      padding: 1.875rem;
+      gap: 1.675rem;
+
+      @include breakpoint-up(medium) {
+        padding: 3.125rem;
+      }
+
+      @include breakpoint-up(large) {
+        padding: 1.875rem;
+      }
+
+      &:nth-child(2) {
+        background-color: #f5f8f1;
+      }
+
+      &:last-child {
+        background-color: #efe8ef;
+      }
+
+      .head {
+        font-size: 1.325rem;
+        font-weight: 600;
+        letter-spacing: 0.15rem;
+
+        @include breakpoint-up(large) {
+          font-size: 1.4rem;
+        }
+      }
+
+      .txt-para {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+
+        @include breakpoint-up(large) {
+          gap: 0.75rem;
+        }
+
+        span {
+          font-size: 0.875rem;
+          color: #828282;
+
+          @include breakpoint-up(large) {
+            font-size: 1rem;
+          }
+        }
+
+        h4 {
+          font-size: 1rem;
+          line-height: 1.5;
+          color: #111111;
+
+          @include breakpoint-up(large) {
+            font-size: 1.25rem;
+          }
+        }
+
+        p {
+          font-size: 0.875rem;
+          color: #666666;
+
+          @include breakpoint-up(large) {
+            font-size: 1rem;
           }
         }
       }

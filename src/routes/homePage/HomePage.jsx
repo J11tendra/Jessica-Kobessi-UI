@@ -56,6 +56,47 @@ function HomePage() {
           </div>
         </div>
       </div>
+      <div className="info-container">
+        <div className="info-wrapper">
+          <h3 className="head">EDUCATION</h3>
+          <div className="txt-para">
+            <span>1998 - 2004</span>
+            <h4>Bachelors in Engineering in Information Technology</h4>
+            <p>Harvard School of Science and Management</p>
+          </div>
+          <div className="txt-para">
+            <span>2004 - 2006</span>
+            <h4>Masters in Data Analysis</h4>
+            <p>Harvard School of Science and Management</p>
+          </div>
+        </div>
+        <div className="info-wrapper">
+          <h3 className="head">EXPERIENCES</h3>
+          <div className="txt-para">
+            <span>1998 - 2004</span>
+            <h4>Bachelors in Engineering in Information Technology</h4>
+            <p>Harvard School of Science and Management</p>
+          </div>
+          <div className="txt-para">
+            <span>2004 - 2006</span>
+            <h4>Masters in Data Analysis</h4>
+            <p>Harvard School of Science and Management</p>
+          </div>
+        </div>
+        <div className="info-wrapper">
+          <h3 className="head">INTERESTS</h3>
+          <div className="txt-para">
+            <span>1998 - 2004</span>
+            <h4>Bachelors in Engineering in Information Technology</h4>
+            <p>Harvard School of Science and Management</p>
+          </div>
+          <div className="txt-para">
+            <span>2004 - 2006</span>
+            <h4>Masters in Data Analysis</h4>
+            <p>Harvard School of Science and Management</p>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }

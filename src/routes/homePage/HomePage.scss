@@ -277,7 +277,6 @@
       flex-direction: column;
       background-color: #efeaea;
       min-width: 18.75rem;
-      // max-width: 23.75rem;
       border-radius: 0.5rem;
       padding: 1.875rem;
       gap: 1.675rem;
@@ -339,6 +338,86 @@
         p {
           font-size: 0.875rem;
           color: #666666;
+
+          @include breakpoint-up(large) {
+            font-size: 1rem;
+          }
+        }
+      }
+    }
+  }
+
+  .ref-container {
+    position: relative;
+    background-image: url("src/assets/jessica-reference-bg.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    border-radius: 0.5rem;
+    height: 30.75rem;
+    margin: 4.25rem 0;
+
+    .ref-wrapper {
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      background-color: #111111;
+      top: 107%;
+      color: #ffffff;
+      min-width: 18.75rem;
+      width: 100%;
+      border-radius: 0.5rem;
+      padding: 1.875rem;
+      gap: 1.675rem;
+
+      @include breakpoint-up(medium) {
+        padding: 3.125rem;
+      }
+
+      @include breakpoint-up(large) {
+        width: inherit;
+        top: 5rem;
+        left: 5rem;
+      }
+
+      .head {
+        font-size: 1.325rem;
+        font-weight: 600;
+        letter-spacing: 0.15rem;
+
+        @include breakpoint-up(large) {
+          font-size: 1.4rem;
+        }
+      }
+
+      .txt-para {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+
+        @include breakpoint-up(large) {
+          gap: 0.75rem;
+        }
+
+        span {
+          font-size: 0.875rem;
+
+          @include breakpoint-up(large) {
+            font-size: 1rem;
+          }
+        }
+
+        h4 {
+          font-size: 1rem;
+          line-height: 1.5;
+
+          @include breakpoint-up(large) {
+            font-size: 1.25rem;
+          }
+        }
+
+        p {
+          font-size: 0.875rem;
 
           @include breakpoint-up(large) {
             font-size: 1rem;

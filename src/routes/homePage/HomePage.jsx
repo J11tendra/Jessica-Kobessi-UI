@@ -97,6 +97,21 @@ function HomePage() {
           </div>
         </div>
       </div>
+      <div className="ref-container">
+        <div className="ref-wrapper">
+          <h3 className="head">REFERENCES</h3>
+          <div className="txt-para">
+            <span>1998 - 2004</span>
+            <h4>Dr. Stephen H. King</h4>
+            <p>Harvard School of Science and Management</p>
+          </div>
+          <div className="txt-para">
+            <span>1998 - 2004</span>
+            <h4>Dr. David Howard</h4>
+            <p>Harvard School of Science and Management</p>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }

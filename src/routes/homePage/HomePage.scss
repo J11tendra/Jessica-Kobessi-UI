@@ -348,79 +348,172 @@
   }
 
   .ref-container {
-    position: relative;
-    background-image: url("src/assets/jessica-reference-bg.png");
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-    border-radius: 0.5rem;
-    height: 30.75rem;
-    margin: 4.25rem 0;
+    width: 100%;
+    min-width: 18.75rem;
+    height: 59rem;
 
-    .ref-wrapper {
-      display: flex;
-      flex-direction: column;
-      position: absolute;
-      background-color: #111111;
-      top: 107%;
-      color: #ffffff;
-      min-width: 18.75rem;
-      width: 100%;
+    @include breakpoint-up(large) {
+      height: 36rem;
+    }
+
+    .img-wrapper {
+      position: relative;
+      background-image: url("src/assets/jessica-reference-bg.png");
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: cover;
       border-radius: 0.5rem;
-      padding: 1.875rem;
-      gap: 1.675rem;
+      height: 30.75rem;
+      margin: 4.25rem 0;
+      width: 100%;
 
-      @include breakpoint-up(medium) {
-        padding: 3.125rem;
+      @include breakpoint-down(x-small) {
+        margin: 4.25rem 0;
       }
 
-      @include breakpoint-up(large) {
-        width: inherit;
-        top: 5rem;
-        left: 5rem;
-      }
-
-      .head {
-        font-size: 1.325rem;
-        font-weight: 600;
-        letter-spacing: 0.15rem;
-
-        @include breakpoint-up(large) {
-          font-size: 1.4rem;
-        }
-      }
-
-      .txt-para {
+      .ref-wrapper {
         display: flex;
         flex-direction: column;
-        gap: 0.5rem;
+        position: absolute;
+        background-color: #111111;
+        color: #ffffff;
+        min-width: 18.75rem;
+        border-radius: 0.5rem;
+        padding: 1.875rem;
+        gap: 1.675rem;
+        left: 0;
+        right: 0;
+        bottom: -21rem;
+        margin: -3rem 0;
 
-        @include breakpoint-up(large) {
-          gap: 0.75rem;
+        @include breakpoint-up(medium) {
+          padding: 3.125rem;
         }
 
-        span {
-          font-size: 0.875rem;
+        @include breakpoint-up(large) {
+          width: fit-content;
+          height: fit-content;
+          top: 6rem;
+          left: 2rem;
+        }
+
+        @include breakpoint-up(x-large) {
+          top: 7rem;
+          left: 3rem;
+        }
+
+        .head {
+          font-size: 1.325rem;
+          font-weight: 600;
+          letter-spacing: 0.15rem;
 
           @include breakpoint-up(large) {
-            font-size: 1rem;
+            font-size: 1.4rem;
           }
         }
 
-        h4 {
-          font-size: 1rem;
-          line-height: 1.5;
+        .txt-para {
+          display: flex;
+          flex-direction: column;
+          gap: 0.5rem;
+
+          @include breakpoint-up(large) {
+            gap: 0.75rem;
+          }
+
+          span {
+            font-size: 0.875rem;
+
+            @include breakpoint-up(large) {
+              font-size: 1rem;
+            }
+          }
+
+          h4 {
+            font-size: 1rem;
+            line-height: 1.5;
+
+            @include breakpoint-up(large) {
+              font-size: 1.25rem;
+            }
+          }
+
+          p {
+            font-size: 0.875rem;
+
+            @include breakpoint-up(large) {
+              font-size: 1rem;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .quote-container {
+    margin: 1rem 0 5rem 0;
+    min-width: 18.75rem;
+
+    .quote-wrapper {
+      display: flex;
+      flex-direction: column;
+      padding: 0 1rem;
+      gap: 2.5rem;
+
+      @include breakpoint-up(large) {
+        gap: 2.875rem;
+      }
+
+      @include breakpoint-up(x-large) {
+        gap: 4rem;
+      }
+
+      h3 {
+        font-size: 1.75rem;
+        font-weight: 700;
+        text-align: center;
+
+        @include breakpoint-up(medium) {
+          font-size: 2rem;
+          max-width: 45rem;
+          margin: 0 auto;
+        }
+
+        @include breakpoint-up(x-large) {
+          font-size: 2.5rem;
+          max-width: 55rem;
+        }
+      }
+
+      .quote-tab-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        gap: 0.675rem;
+
+        @include breakpoint-up(medium) {
+          gap: 0.875rem;
+          row-gap: 1rem;
+        }
+
+        .quote-tab {
+          border-radius: 0.5rem;
+          padding: 0.675rem 1.25rem;
+          background-color: #f5e9e9;
+          width: fit-content;
+
+          @include breakpoint-up(medium) {
+            font-size: 1.125rem;
+          }
 
           @include breakpoint-up(large) {
             font-size: 1.25rem;
+            padding: 0.75rem 1.3rem;
           }
-        }
 
-        p {
-          font-size: 0.875rem;
-
-          @include breakpoint-up(large) {
-            font-size: 1rem;
+          &.active {
+            color: #ffffff;
+            background-color: #000000;
           }
         }
       }

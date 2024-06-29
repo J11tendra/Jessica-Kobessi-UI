@@ -519,4 +519,102 @@
       }
     }
   }
+
+  .gallery-container {
+    min-width: 18.75rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.875rem;
+
+    @include breakpoint-up(medium) {
+      gap: 2.25rem;
+    }
+
+    @include breakpoint-up(large) {
+      gap: 2.5rem;
+    }
+
+    @include breakpoint-up(x-large) {
+      gap: 3rem;
+    }
+
+    .img-wrapper {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: repeat(4, auto);
+      grid-template-areas:
+        "gallery-1 gallery-2"
+        "gallery-3 gallery-3"
+        "gallery-4 gallery-5"
+        "gallery-6 gallery-6";
+      gap: 0.625rem;
+
+      @include breakpoint-up(large) {
+        grid-template-columns: repeat(4, auto);
+        grid-template-rows: auto;
+        grid-template-areas:
+          "gallery-1 gallery-2 gallery-4 gallery-5"
+          "gallery-3 gallery-3 gallery-6 gallery-6";
+        gap: 0.725rem;
+      }
+
+      img {
+        width: 100%;
+        max-height: 13.125rem;
+        object-fit: cover;
+
+        @include breakpoint-up(medium) {
+          max-height: 15.625rem;
+          object-position: top center;
+        }
+
+        @include breakpoint-up(x-large) {
+          max-height: 31.25rem;
+        }
+
+        &:first-of-type {
+          grid-area: gallery-1;
+        }
+
+        &:nth-child(2) {
+          grid-area: gallery-2;
+        }
+
+        &:nth-child(3) {
+          grid-area: gallery-3;
+          max-height: 15.625rem;
+
+          @include breakpoint-up(x-large) {
+            max-height: 30rem;
+          }
+        }
+
+        &:nth-child(4) {
+          grid-area: gallery-4;
+        }
+
+        &:nth-child(5) {
+          grid-area: gallery-5;
+        }
+
+        &:nth-child(6) {
+          grid-area: gallery-6;
+          max-height: 15.625rem;
+
+          @include breakpoint-up(x-large) {
+            max-height: 30rem;
+          }
+        }
+      }
+    }
+
+    .work-btn {
+      align-self: center;
+      width: fit-content;
+      font-weight: 500;
+      padding: 1.125rem 1.875rem;
+      border: 0.0625rem solid black;
+      border-radius: 0.5rem;
+    }
+  }
 }

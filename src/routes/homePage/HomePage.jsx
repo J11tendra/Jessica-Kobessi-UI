@@ -128,6 +128,17 @@ function HomePage() {
           </div>
         </div>
       </div>
+      <div className="gallery-container">
+        <div className="img-wrapper">
+          <img src="src/assets/gallery-1.svg" alt="" />
+          <img src="src/assets/gallery-2.svg" alt="" />
+          <img src="src/assets/gallery-3.svg" alt="" />
+          <img src="src/assets/gallery-4.svg" alt="" />
+          <img src="src/assets/gallery-5.svg" alt="" />
+          <img src="src/assets/gallery-6.svg" alt="" />
+        </div>
+        <div className="work-btn">VIEW ALL WORKS</div>
+      </div>
     </div>
   );
 }

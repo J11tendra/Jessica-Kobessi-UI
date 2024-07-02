@@ -453,12 +453,28 @@
   .quote-container {
     margin: 1rem 0 5rem 0;
     min-width: 18.75rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.875rem;
+
+    @include breakpoint-up(medium) {
+      gap: 2.25rem;
+    }
+
+    @include breakpoint-up(large) {
+      gap: 2.5rem;
+    }
+
+    @include breakpoint-up(x-large) {
+      gap: 3rem;
+    }
 
     .quote-wrapper {
       display: flex;
       flex-direction: column;
       padding: 0 1rem;
       gap: 2.5rem;
+      margin: 0 0 1rem 0;
 
       @include breakpoint-up(large) {
         gap: 2.875rem;
@@ -517,25 +533,6 @@
           }
         }
       }
-    }
-  }
-
-  .gallery-container {
-    min-width: 18.75rem;
-    display: flex;
-    flex-direction: column;
-    gap: 1.875rem;
-
-    @include breakpoint-up(medium) {
-      gap: 2.25rem;
-    }
-
-    @include breakpoint-up(large) {
-      gap: 2.5rem;
-    }
-
-    @include breakpoint-up(x-large) {
-      gap: 3rem;
     }
 
     .img-wrapper {
@@ -615,6 +612,13 @@
       padding: 1.125rem 1.875rem;
       border: 0.0625rem solid black;
       border-radius: 0.5rem;
+      transition: all 300ms ease-in-out;
+
+      &:hover,
+      &:active {
+        background-color: #000000;
+        color: #ffffff;
+      }
     }
   }
 }

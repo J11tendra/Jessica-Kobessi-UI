@@ -127,8 +127,6 @@ function HomePage() {
             <div className="quote-tab">BRANDING</div>
           </div>
         </div>
-      </div>
-      <div className="gallery-container">
         <div className="img-wrapper">
           <img src="src/assets/gallery-1.svg" alt="" />
           <img src="src/assets/gallery-2.svg" alt="" />

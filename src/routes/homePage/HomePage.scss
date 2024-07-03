@@ -621,4 +621,73 @@
       }
     }
   }
+
+  .testimonial-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    min-width: 18.75rem;
+    gap: 2.125rem;
+
+    .head-container {
+      font-size: 2rem;
+      font-weight: 600;
+      text-align: center;
+    }
+
+    .wrapper {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      gap: 1rem;
+
+      .card-wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        max-width: 27rem;
+        background-color: #000000;
+        color: #ffffff;
+        border-radius: 0.5rem;
+        padding: 2rem;
+
+        p {
+          // text-align: center;/
+          margin-bottom: 2rem;
+          line-height: 167%;
+        }
+
+        h5 {
+          font-size: 1.25rem;
+          font-weight: 600;
+          margin-bottom: 0.5rem;
+        }
+
+        span {
+          font-size: 0.875rem;
+          color: #f0756c;
+        }
+      }
+
+      .slider-indicator {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        min-width: 4.5rem;
+
+        span {
+          background-color: #000000;
+          height: 0.675rem;
+          width: 0.675rem;
+          border-radius: 50%;
+
+          &.active {
+            background-color: #f0756c;
+          }
+        }
+      }
+    }
+  }
 }

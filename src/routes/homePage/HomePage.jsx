@@ -137,6 +137,43 @@ function HomePage() {
         </div>
         <div className="work-btn">VIEW ALL WORKS</div>
       </div>
+      <div className="testimonial-container">
+        <h2 className="head-container">TESTIMONIALS</h2>
+        <div className="wrapper">
+          <div className="card-wrapper">
+            <p>
+              “A pellen tesque pretium feugiat vel morbi sagittis lorem habi
+              tasse cursus. Suspen dise tempus oncu enim pellen tesque est in
+              neque, elit habi mattis.”
+            </p>
+            <h5>Kelly Garcia</h5>
+            <span>CEO at Liami</span>
+          </div>
+          <div className="card-wrapper">
+            <p>
+              “A pellen tesque pretium feugiat vel morbi sagittis lorem habi
+              tasse cursus. Suspen dise tempus oncu enim pellen tesque est in
+              neque, elit habi mattis.”
+            </p>
+            <h5>Kelly Garcia</h5>
+            <span>CEO at Liami</span>
+          </div>
+          <div className="card-wrapper">
+            <p>
+              “A pellen tesque pretium feugiat vel morbi sagittis lorem habi
+              tasse cursus. Suspen dise tempus oncu enim pellen tesque est in
+              neque, elit habi mattis.”
+            </p>
+            <h5>Kelly Garcia</h5>
+            <span>CEO at Liami</span>
+          </div>
+          <div className="slider-indicator">
+            <span className="active"></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }

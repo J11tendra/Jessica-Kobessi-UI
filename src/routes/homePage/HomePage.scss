@@ -618,6 +618,7 @@
       &:active {
         background-color: #000000;
         color: #ffffff;
+        cursor: pointer;
       }
     }
   }
@@ -629,11 +630,30 @@
     align-items: center;
     min-width: 18.75rem;
     gap: 2.125rem;
+    margin: 2rem 0;
+
+    @include breakpoint-up(large) {
+      gap: 3rem;
+      margin: 4rem 0;
+    }
+
+    @include breakpoint-up(x-large) {
+      gap: 4rem;
+      margin: 7rem 0;
+    }
 
     .head-container {
       font-size: 2rem;
       font-weight: 600;
       text-align: center;
+
+      @include breakpoint-up(medium) {
+        font-size: 2.25rem;
+      }
+
+      @include breakpoint-up(large) {
+        font-size: 2.375rem;
+      }
     }
 
     .wrapper {
@@ -642,21 +662,70 @@
       justify-content: space-between;
       align-items: center;
       gap: 1rem;
+      width: 100%;
+
+      .slider {
+        margin: auto;
+        position: relative;
+        width: inherit;
+        display: grid;
+        place-items: center;
+        overflow: hidden;
+
+        .slider-track {
+          display: flex;
+          gap: 2rem;
+          width: max-content;
+          animation: scroll 25s linear infinite;
+
+          &:hover {
+            animation-play-state: paused;
+          }
+        }
+
+        @keyframes scroll {
+          0% {
+            transform: translateX(0);
+          }
+          100% {
+            transform: translateX(calc(-100% / 2));
+          }
+        }
+      }
 
       .card-wrapper {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        max-width: 27rem;
+        max-width: 22rem;
         background-color: #000000;
         color: #ffffff;
         border-radius: 0.5rem;
         padding: 2rem;
 
+        @include breakpoint-up(medium) {
+          padding: 2.125rem;
+        }
+
+        @include breakpoint-up(large) {
+          padding: 2.35rem;
+          width: 23rem;
+          height: 19rem;
+        }
+
+        @include breakpoint-up(x-large) {
+          padding: 2.75rem;
+          width: 24rem;
+          height: 23rem;
+        }
+
         p {
-          // text-align: center;/
           margin-bottom: 2rem;
           line-height: 167%;
+
+          @include breakpoint-up(large) {
+            font-size: 1.15rem;
+          }
         }
 
         h5 {
@@ -668,24 +737,6 @@
         span {
           font-size: 0.875rem;
           color: #f0756c;
-        }
-      }
-
-      .slider-indicator {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        min-width: 4.5rem;
-
-        span {
-          background-color: #000000;
-          height: 0.675rem;
-          width: 0.675rem;
-          border-radius: 50%;
-
-          &.active {
-            background-color: #f0756c;
-          }
         }
       }
     }

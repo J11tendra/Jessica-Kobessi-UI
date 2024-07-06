@@ -140,37 +140,89 @@ function HomePage() {
       <div className="testimonial-container">
         <h2 className="head-container">TESTIMONIALS</h2>
         <div className="wrapper">
-          <div className="card-wrapper">
-            <p>
-              “A pellen tesque pretium feugiat vel morbi sagittis lorem habi
-              tasse cursus. Suspen dise tempus oncu enim pellen tesque est in
-              neque, elit habi mattis.”
-            </p>
-            <h5>Kelly Garcia</h5>
-            <span>CEO at Liami</span>
-          </div>
-          <div className="card-wrapper">
-            <p>
-              “A pellen tesque pretium feugiat vel morbi sagittis lorem habi
-              tasse cursus. Suspen dise tempus oncu enim pellen tesque est in
-              neque, elit habi mattis.”
-            </p>
-            <h5>Kelly Garcia</h5>
-            <span>CEO at Liami</span>
-          </div>
-          <div className="card-wrapper">
-            <p>
-              “A pellen tesque pretium feugiat vel morbi sagittis lorem habi
-              tasse cursus. Suspen dise tempus oncu enim pellen tesque est in
-              neque, elit habi mattis.”
-            </p>
-            <h5>Kelly Garcia</h5>
-            <span>CEO at Liami</span>
-          </div>
-          <div className="slider-indicator">
-            <span className="active"></span>
-            <span></span>
-            <span></span>
+          <div className="slider">
+            <div className="slider-track">
+              <div className="card-wrapper">
+                <p>
+                  “This product has changed my life! The quality is unmatched
+                  and the customer service is top-notch. Highly recommend!"
+                </p>
+                <div className="designation-text">
+                  <h5>Kelly Garcia</h5>
+                  <span>CEO at Liami</span>
+                </div>
+              </div>
+              <div className="card-wrapper">
+                <p>
+                  “I was skeptical at first, but this product exceeded my
+                  expectations. It's reliable, easy to use, and affordable."
+                </p>
+                <div className="designation-text">
+                  <h5>John Smith</h5>
+                  <span>Manager, Business Inc.</span>
+                </div>
+              </div>
+              <div className="card-wrapper">
+                <p>
+                  "Fantastic experience! The delivery was quick, and the product
+                  works perfectly. I'll definitely be a repeat customer."
+                </p>
+                <div className="designation-text">
+                  <h5>Sarah Johnson</h5>
+                  <span>Liami, Freelancer</span>
+                </div>
+              </div>
+              <div className="card-wrapper">
+                <p>
+                  "Amazing service and an even better product. I’ve recommended
+                  it to all my friends and family.I'll give Five stars!"
+                </p>
+                <div className="designation-text">
+                  <h5>Mike Brown</h5>
+                  <span>Entrepreneurship Couch</span>
+                </div>
+              </div>
+              <div className="card-wrapper">
+                <p>
+                  “This product has changed my life! The quality is unmatched
+                  and the customer service is top-notch. Highly recommend!"
+                </p>
+                <div className="designation-text">
+                  <h5>Kelly Garcia</h5>
+                  <span>CEO at Liami</span>
+                </div>
+              </div>
+              <div className="card-wrapper">
+                <p>
+                  “I was skeptical at first, but this product exceeded my
+                  expectations. It's reliable, easy to use, and affordable."
+                </p>
+                <div className="designation-text">
+                  <h5>John Smith</h5>
+                  <span>Manager, Business Inc.</span>
+                </div>
+              </div>
+              <div className="card-wrapper">
+                <p>
+                  "Fantastic experience! The delivery was quick, and the product
+                  works perfectly. I'll definitely be a repeat customer."
+                </p>
+                <div className="designation-text">
+                  <h5>Sarah Johnson</h5>
+                  <span>Liami, Freelancer</span>
+                </div>
+              </div>
+              <div className="card-wrapper">
+                <p>
+                  "Amazing service and an even better product. I’ve recommended
+                  it to all my friends and family. I'll give Five stars!"
+                </p>
+                <div className="designation-text">
+                  <h5>Mike Brown</h5>
+                  <span>Entrepreneurship Couch</span>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>

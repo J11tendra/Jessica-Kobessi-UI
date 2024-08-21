@@ -1,0 +1,75 @@
+@import "../../styles/responsive.scss";
+
+.faq-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 0.5rem;
+  background-color: #efeaea;
+  padding: 1.25rem;
+  gap: 2rem;
+
+  @include breakpoint-up(medium) {
+    padding: 1.35rem;
+  }
+
+  @include breakpoint-up(large) {
+    padding: 1.5rem;
+  }
+
+  .question-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    gap: 1rem;
+    cursor: pointer;
+
+    p {
+      font-weight: 600;
+
+      @include breakpoint-up(medium) {
+        font-size: 1.125rem;
+      }
+
+      @include breakpoint-up(large) {
+        font-size: 1.25rem;
+      }
+    }
+
+    img {
+      height: 0.75rem;
+      width: 0.75rem;
+
+      @include breakpoint-up(medium) {
+        height: 0.85rem;
+        width: 0.85rem;
+      }
+
+      @include breakpoint-up(large) {
+        height: 0.95rem;
+        width: 0.95rem;
+      }
+
+      &.rotate {
+        transform: rotate(180deg);
+      }
+    }
+  }
+
+  .answer-wrapper {
+    display: none;
+    font-size: 0.875rem;
+    color: #666666;
+    line-height: 1.7;
+
+    @include breakpoint-up(large) {
+      font-size: 1.125rem;
+    }
+
+    &.open {
+      display: block;
+    }
+  }
+}

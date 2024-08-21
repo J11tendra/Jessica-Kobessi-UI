@@ -1,0 +1,58 @@
+@import "../../styles/responsive.scss";
+
+.faq-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  margin: 5rem 0;
+  min-width: 18.75rem;
+
+  .faq-heading {
+    font-size: 2rem;
+    font-weight: 600;
+    text-align: center;
+
+    @include breakpoint-up(medium) {
+      font-size: 2.25rem;
+    }
+
+    @include breakpoint-up(large) {
+      font-size: 2.375rem;
+    }
+
+    @include breakpoint-up(large) {
+      font-size: 2.5rem;
+    }
+  }
+
+  .faq-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 2rem;
+    width: 100%;
+
+    .img-wrapper {
+      flex: 1;
+
+      @include breakpoint-down(medium) {
+        display: none;
+      }
+
+      img {
+        height: 100%;
+        width: 100%;
+      }
+    }
+
+    .question-container {
+      flex: 1;
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+      gap: 1.25rem;
+    }
+  }
+}

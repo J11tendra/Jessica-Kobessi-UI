@@ -654,6 +654,10 @@
       @include breakpoint-up(large) {
         font-size: 2.375rem;
       }
+
+      @include breakpoint-up(large) {
+        font-size: 2.5rem;
+      }
     }
 
     .wrapper {

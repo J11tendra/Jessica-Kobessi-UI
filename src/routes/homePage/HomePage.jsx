@@ -1,5 +1,6 @@
 import "./HomePage.scss";
 import FAQ from "../../components/faq/Faq";
+import News from "../../components/news/News";
 
 function HomePage() {
   return (
@@ -227,26 +228,8 @@ function HomePage() {
           </div>
         </div>
       </div>
-      {/* <div className="faq-container">
-        <h2 className="faq-heading">FAQs</h2>
-        <div className="faq-wrapper">
-          <div className="img-wrapper">
-            <img src="src/assets/faq-main-bg.svg" alt="" />
-          </div>
-          <div className="question-container">
-            <div className="question-wrapper">
-              <p>Can I use credit cards or USD for payment?</p>
-              <img src="public/chevron-down.svg" alt="" />
-            </div>
-            <p className="answer-wrapper">
-              Labore accusam in modo compungi, iacentem substantiales um se sed
-              esse haec. Labore accusam in modo compungi, iacentem substantiales
-              um se sed esse haec.
-            </p>
-          </div>
-        </div>
-      </div> */}
       <FAQ />
+      <News />
     </div>
   );
 }

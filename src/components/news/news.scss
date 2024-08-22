@@ -1,0 +1,72 @@
+@import "../../styles/responsive.scss";
+
+.news-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  margin: 5rem 0;
+  min-width: 18.75rem;
+
+  .news-heading {
+    font-size: 2rem;
+    font-weight: 600;
+    text-align: center;
+
+    @include breakpoint-up(medium) {
+      font-size: 2.25rem;
+    }
+
+    @include breakpoint-up(large) {
+      font-size: 2.375rem;
+    }
+
+    @include breakpoint-up(large) {
+      font-size: 2.5rem;
+    }
+  }
+  .small-heading {
+    text-align: center;
+    color: #828282;
+
+    @include breakpoint-up(large) {
+      font-size: 1.125rem;
+    }
+  }
+
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+
+    @include breakpoint-up(medium) {
+      display: grid;
+      grid-template-areas:
+        "item-1 irem-2"
+        "item-3 item-4";
+    }
+  }
+
+  .more-btn {
+    text-align: center;
+    padding: 1.125rem 1.875rem;
+    border-radius: 0.5rem;
+    border: 0.125rem solid #111;
+    font-size: 1rem;
+    transition: all 200ms ease-in;
+
+    @include breakpoint-up(large) {
+      font-size: 1.25rem;
+    }
+
+    &:active,
+    &:hover {
+      color: white;
+      background-color: black;
+      cursor: pointer;
+    }
+  }
+}

@@ -1,0 +1,50 @@
+@import "../../styles/responsive.scss";
+
+.news-card {
+  border: 0.125rem solid rgba(51, 51, 51, 0.3);
+  border-radius: 0.5rem;
+  padding: 1.35rem 1.25rem;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  gap: 1.875rem;
+
+  @include breakpoint-up(large) {
+    flex-direction: row;
+    gap: 2.5rem;
+  }
+
+  &.closed {
+    display: none;
+  }
+
+  .news-img-wrapper {
+    img {
+      height: 100%;
+      width: 100%;
+    }
+  }
+
+  .news-head-wrapper {
+    .news-stats {
+      font-size: 0.875rem;
+      color: #828282;
+      font-weight: 400;
+      margin-bottom: 1rem;
+
+      @include breakpoint-up(large) {
+        font-size: 1.125rem;
+      }
+    }
+
+    .news-head {
+      font-size: 1.375rem;
+      font-weight: 600;
+      max-width: 28.75rem;
+
+      @include breakpoint-up(large) {
+        font-size: 1.875rem;
+      }
+    }
+  }
+}

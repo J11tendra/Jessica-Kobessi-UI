@@ -8,45 +8,45 @@ function Navbar() {
     <nav>
       <div className="left">
         <a href="/">
-          <img src="public/logo.png" alt="" />
+          <img src="/logo.png" alt="" />
         </a>
         <div className="socials">
           <a href="/">
-            <img src="public/skype-icon.svg" alt="" />
+            <img src="/skype-icon.svg" alt="" />
           </a>
           <a href="/">
-            <img src="public/snapchat-icon.svg" alt="" />
+            <img src="/snapchat-icon.svg" alt="" />
           </a>
           <a href="/">
-            <img src="public/telegram-icon.svg" alt="" />
+            <img src="/telegram-icon.svg" alt="" />
           </a>
           <a href="/">
-            <img src="public/tumblr-icon.svg" alt="" />
+            <img src="/tumblr-icon.svg" alt="" />
           </a>
           <a href="/">
-            <img src="public/twitter-icon.svg" alt="" />
+            <img src="/twitter-icon.svg" alt="" />
           </a>
           <a href="/">
-            <img src="public/whatsapp-icon.svg" alt="" />
+            <img src="/whatsapp-icon.svg" alt="" />
           </a>
           <a href="/">
-            <img src="public/github-icon.svg" alt="" />
+            <img src="/github-icon.svg" alt="" />
           </a>
           <a href="/">
-            <img src="public/facebook-icon.svg" alt="" />
+            <img src="/facebook-icon.svg" alt="" />
           </a>
           <a href="/">
-            <img src="public/facebook-messenger-icon.svg" alt="" />
+            <img src="/facebook-messenger-icon.svg" alt="" />
           </a>
           <a href="/">
-            <img src="public/behance-icon.svg" alt="" />
+            <img src="/behance-icon.svg" alt="" />
           </a>
         </div>
       </div>
       <div className="right">
         <div className="menuIcon">
           <img
-            src="public/hamburger-menu.svg"
+            src="/hamburger-menu.svg"
             alt=""
             className={open && "active"}
             onClick={() => {

@@ -37,21 +37,21 @@ function HomePage() {
       </div>
       <div className="skills-container">
         <div className="txt-row-container">
-          <img src="public/moniter-skill.png" alt="" />
+          <img src="/moniter-skill.png" alt="" />
           <div className="txt-row">
             <h3>UI/UX Design</h3>
             <p>At in proin consequat ut cursus venenatis sapien.</p>
           </div>
         </div>
         <div className="txt-row-container">
-          <img src="public/calendar-skill.png" alt="" />
+          <img src="/calendar-skill.png" alt="" />
           <div className="txt-row">
             <h3>Illustration</h3>
             <p>At in proin consequat ut cursus venenatis sapien.</p>
           </div>
         </div>
         <div className="txt-row-container">
-          <img src="public/laptop-skill.png" alt="" />
+          <img src="/laptop-skill.png" alt="" />
           <div className="txt-row">
             <h3>Graphic Design</h3>
             <p>At in proin consequat ut cursus venenatis sapien.</p>
@@ -130,12 +130,12 @@ function HomePage() {
           </div>
         </div>
         <div className="img-wrapper">
-          <img src="src/assets/gallery-1.svg" alt="" />
-          <img src="src/assets/gallery-2.svg" alt="" />
-          <img src="src/assets/gallery-3.svg" alt="" />
-          <img src="src/assets/gallery-4.svg" alt="" />
-          <img src="src/assets/gallery-5.svg" alt="" />
-          <img src="src/assets/gallery-6.svg" alt="" />
+          <img src="/gallery-1.svg" alt="" />
+          <img src="/gallery-2.svg" alt="" />
+          <img src="/gallery-3.svg" alt="" />
+          <img src="/gallery-4.svg" alt="" />
+          <img src="/gallery-5.svg" alt="" />
+          <img src="/gallery-6.svg" alt="" />
         </div>
         <div className="work-btn">VIEW ALL WORKS</div>
       </div>

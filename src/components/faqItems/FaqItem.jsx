@@ -16,7 +16,7 @@ const FAQitem = ({
       >
         <p>{question}</p>
         <img
-          src="public/chevron-down.svg"
+          src="/chevron-down.svg"
           alt="Toggle"
           className={activeIndex === indexValue ? "rotate" : ""}
         />

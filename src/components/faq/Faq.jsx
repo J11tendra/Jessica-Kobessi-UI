@@ -43,7 +43,7 @@ const FAQ = () => {
       <h2 className="faq-heading">FAQs</h2>
       <div className="faq-wrapper">
         <div className="img-wrapper">
-          <img src="src/assets/faq-main-bg.svg" alt="FAQ Background" />
+          <img src="/faq-main-bg.svg" alt="FAQ Background" />
         </div>
         <div className="question-container">
           {faqs.map((faq, index) => (

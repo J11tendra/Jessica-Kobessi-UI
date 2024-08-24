@@ -13,25 +13,25 @@ const News = () => {
     {
       title: "Graphic Designing Useful Tips & Best Practices",
       stats: "Design / Sept 12, 2022",
-      img: "src/assets/news-card-1.jpg",
+      img: "/news-card-1.jpg",
       isExtra: false,
     },
     {
       title: "Best way to do branding of digital products ",
       stats: "Branding   /   Sept 12, 2022",
-      img: "src/assets/news-card-2.jpg",
+      img: "/news-card-2.jpg",
       isExtra: false,
     },
     {
       title: "Top 10 graphic designs review in 2024 (updated)",
       stats: "Graphic Design   /   Sept 12, 2022",
-      img: "src/assets/news-card-3.jpg",
+      img: "/news-card-3.jpg",
       isExtra: true,
     },
     {
       title: "Graphic Designing Useful Tips & Best Practices",
       stats: "Design / Sept 12, 2022",
-      img: "src/assets/news-card-1.jpg",
+      img: "/news-card-1.jpg",
       isExtra: true,
     },
   ];
